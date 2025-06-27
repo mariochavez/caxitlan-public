@@ -3,7 +3,6 @@
   <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="view-transition" content="same-origin">
 
   <!-- Begin Bridgetown SEO tag v6.0.0 -->
 <title>Caxitlán: Proyecto fotográfico que explora la identidad colimense contemporánea desde las raíces coloniales, recorriendo la ruta histórica de la conquista en Colima para revelar las complejidades del mestizaje y su influencia en la sociedad actual.</title>
@@ -17,7 +16,7 @@
 <meta property="og:site_name" content="Caxitlán" />
 <meta property="og:image" content="https://caxitlan.org/images/caxitlan-cover.jpg" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2025-06-09T16:39:12-06:00" />
+<meta property="article:published_time" content="2025-06-27T17:23:44-06:00" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:image" content="https://caxitlan.org/images/caxitlan-cover.jpg" />
 <meta property="twitter:title" content="Caxitlán: Proyecto fotográfico que explora la identidad colimense contemporánea desde las raíces coloniales, recorriendo la ruta histórica de la conquista en Colima para revelar las complejidades del mestizaje y su influencia en la sociedad actual." />
@@ -53,8 +52,8 @@
     }
   </script>
 
-  <link rel="stylesheet" href="/_bridgetown/static/index.SVSC6GGS.css"/>
-  <script src="/_bridgetown/static/index.WQINCBEY.js" defer></script>
+  <link rel="stylesheet" href="/_bridgetown/static/index.I3MKYYVC.css"/>
+  <script src="/_bridgetown/static/index.WXLPMHAZ.js" defer></script>
   
 </head>
 
@@ -62,7 +61,7 @@
     <main>
       <header
   class="
-    fixed top-4 right-4 z-50 bg-white bg-opacity-80 p-2 rounded shadow text-xs
+    fixed top-4 right-4 z-40 bg-white bg-opacity-80 p-2 rounded shadow text-xs
   "
 >
   <a
@@ -74,10 +73,52 @@
   >Acerca del proyecto</a>
 </header>
 
-<div class="viewport-container" data-controller="viewport">
+<div
+  class="viewport-container"
+  data-controller="viewport-navigation viewport-content-monitor"
+  data-viewport-navigation-initial-box-value="box-2"
+  data-viewport-content-monitor-target-box-value="box-2"
+  data-viewport-content-monitor-nearby-threshold-value="600"
+>
+
+  <div
+    class="viewport-overlay"
+    data-controller="overlay"
+    data-overlay-text-fill-delay-value="2000"
+    data-overlay-min-display-time-value="3000"
+  >
+    <h1 class="viewport-overlay-text" data-overlay-target="text">
+      CAXITLÁN
+    </h1>
+    <div class="px-4 py-3">
+      <div class="flex items-center justify-center gap-3 max-w-screen-md mx-auto">
+        <svg
+          class="w-6 h-6 flex-shrink-0 text-gray-500"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <rect x="3" y="3" width="18" height="12" rx="2" ry="2"></rect>
+          <line x1="8" y1="21" x2="16" y2="21"></line>
+          <line x1="12" y1="15" x2="12" y2="21"></line>
+        </svg>
+        <p class="text-sm text-center leading-relaxed font-light text-gray-500 m-0">
+          Caxitlán está optimizado para tablets y computadoras.
+          <br/>Disfruta la experiencia completa en una pantalla más grande.
+        </p>
+      </div>
+    </div>
+  </div>
+
   <div
     class="viewport-canvas"
-    data-viewport-target="canvas"
+    data-viewport-navigation-target="canvas"
     style="width: 4964px; height: 2690px;"
   >
 
@@ -182,221 +223,309 @@
       <div
         class="viewport-box"
         id="box-1"
-        data-viewport-target="box"
-        data-box-id="box-1"
-        data-content-type="photo"
+        data-controller="viewport-box"
+        data-viewport-box-box-id-value="box-1"
+        data-viewport-box-content-type-value="photo"
+        data-viewport-box-rotation-value="0"
+        data-action="
+          click->viewport-box#click
+          mouseenter->viewport-box#mouseEnter
+          mouseleave->viewport-box#mouseLeave
+        "
         style="position: absolute; left: 1833px; top: 138px; width: 896px; height: 717px; transform: rotate(0deg);"
       >
 
         <div class="box-content">
-            <div class="photo-placeholder">
+              <div
+                class="photo-placeholder"
+                data-controller="lazy-image"
+                data-lazy-image-src-value="/images/caxitlán-39.webp"
+              >
                 <img
-                  data-src="/images/caxitlán-39.webp"
                   src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2YwZjBmMCIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LXNpemU9IjE2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZmlsbD0iI2MwYzBjMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkxvYWRpbmcuLi48L3RleHQ+PC9zdmc+"
                   alt="Caxitlán"
                   class="w-full h-full object-cover"
-                  data-lazy="true"
                   loading="lazy"
                 />
-            </div>
+              </div>
         </div>
       </div>
       <div
         class="viewport-box"
         id="box-2"
-        data-viewport-target="box"
-        data-box-id="box-2"
-        data-content-type="photo"
+        data-controller="viewport-box"
+        data-viewport-box-box-id-value="box-2"
+        data-viewport-box-content-type-value="photo"
+        data-viewport-box-rotation-value="0"
+        data-action="
+          click->viewport-box#click
+          mouseenter->viewport-box#mouseEnter
+          mouseleave->viewport-box#mouseLeave
+        "
         style="position: absolute; left: 1974px; top: 1103px; width: 615px; height: 768px; transform: rotate(0deg);"
       >
 
         <div class="box-content">
-            <div class="photo-placeholder">
+              <div class="photo-placeholder">
                 <img
                   src="/images/caxitlán-51.webp"
                   alt="Caxitlán"
                   class="w-full h-full object-cover"
-                  data-loaded="true"
                 />
-            </div>
+              </div>
         </div>
       </div>
       <div
         class="viewport-box"
         id="box-3"
-        data-viewport-target="box"
-        data-box-id="box-3"
-        data-content-type="photo"
+        data-controller="viewport-box"
+        data-viewport-box-box-id-value="box-3"
+        data-viewport-box-content-type-value="photo"
+        data-viewport-box-rotation-value="0"
+        data-action="
+          click->viewport-box#click
+          mouseenter->viewport-box#mouseEnter
+          mouseleave->viewport-box#mouseLeave
+        "
         style="position: absolute; left: 1023px; top: 1556px; width: 615px; height: 768px; transform: rotate(0deg);"
       >
 
         <div class="box-content">
-            <div class="photo-placeholder">
+              <div
+                class="photo-placeholder"
+                data-controller="lazy-image"
+                data-lazy-image-src-value="/images/caxitlán-49.webp"
+              >
                 <img
-                  data-src="/images/caxitlán-49.webp"
                   src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2YwZjBmMCIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LXNpemU9IjE2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZmlsbD0iI2MwYzBjMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkxvYWRpbmcuLi48L3RleHQ+PC9zdmc+"
                   alt="Frame 3"
                   class="w-full h-full object-cover"
-                  data-lazy="true"
                   loading="lazy"
                 />
-            </div>
+              </div>
         </div>
       </div>
       <div
         class="viewport-box"
         id="box-4"
-        data-viewport-target="box"
-        data-box-id="box-4"
-        data-content-type="photo"
+        data-controller="viewport-box"
+        data-viewport-box-box-id-value="box-4"
+        data-viewport-box-content-type-value="photo"
+        data-viewport-box-rotation-value="0"
+        data-action="
+          click->viewport-box#click
+          mouseenter->viewport-box#mouseEnter
+          mouseleave->viewport-box#mouseLeave
+        "
         style="position: absolute; left: 4014px; top: 533px; width: 615px; height: 768px; transform: rotate(0deg);"
       >
 
         <div class="box-content">
-            <div class="photo-placeholder">
+              <div
+                class="photo-placeholder"
+                data-controller="lazy-image"
+                data-lazy-image-src-value="/images/caxitlán-61.webp"
+              >
                 <img
-                  data-src="/images/caxitlán-61.webp"
                   src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2YwZjBmMCIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LXNpemU9IjE2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZmlsbD0iI2MwYzBjMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkxvYWRpbmcuLi48L3RleHQ+PC9zdmc+"
                   alt="Caxitlán"
                   class="w-full h-full object-cover"
-                  data-lazy="true"
                   loading="lazy"
                 />
-            </div>
+              </div>
         </div>
       </div>
       <div
         class="viewport-box"
         id="box-5"
-        data-viewport-target="box"
-        data-box-id="box-5"
-        data-content-type="photo"
+        data-controller="viewport-box"
+        data-viewport-box-box-id-value="box-5"
+        data-viewport-box-content-type-value="photo"
+        data-viewport-box-rotation-value="0"
+        data-action="
+          click->viewport-box#click
+          mouseenter->viewport-box#mouseEnter
+          mouseleave->viewport-box#mouseLeave
+        "
         style="position: absolute; left: 2025px; top: 2119px; width: 512px; height: 410px; transform: rotate(0deg);"
       >
 
         <div class="box-content">
-            <div class="photo-placeholder">
+              <div
+                class="photo-placeholder"
+                data-controller="lazy-image"
+                data-lazy-image-src-value="/images/caxitlán-87.webp"
+              >
                 <img
-                  data-src="/images/caxitlán-87.webp"
                   src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2YwZjBmMCIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LXNpemU9IjE2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZmlsbD0iI2MwYzBjMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkxvYWRpbmcuLi48L3RleHQ+PC9zdmc+"
                   alt="Caxitlán"
                   class="w-full h-full object-cover"
-                  data-lazy="true"
                   loading="lazy"
                 />
-            </div>
+              </div>
         </div>
       </div>
       <div
         class="viewport-box"
         id="box-6"
-        data-viewport-target="box"
-        data-box-id="box-6"
-        data-content-type="photo"
+        data-controller="viewport-box"
+        data-viewport-box-box-id-value="box-6"
+        data-viewport-box-content-type-value="photo"
+        data-viewport-box-rotation-value="0"
+        data-action="
+          click->viewport-box#click
+          mouseenter->viewport-box#mouseEnter
+          mouseleave->viewport-box#mouseLeave
+        "
         style="position: absolute; left: 4389px; top: 2001px; width: 384px; height: 307px; transform: rotate(0deg);"
       >
 
         <div class="box-content">
-            <div class="photo-placeholder">
+              <div
+                class="photo-placeholder"
+                data-controller="lazy-image"
+                data-lazy-image-src-value="/images/caxitlán-9.webp"
+              >
                 <img
-                  data-src="/images/caxitlán-9.webp"
                   src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2YwZjBmMCIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LXNpemU9IjE2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZmlsbD0iI2MwYzBjMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkxvYWRpbmcuLi48L3RleHQ+PC9zdmc+"
                   alt="Caxitlán"
                   class="w-full h-full object-cover"
-                  data-lazy="true"
                   loading="lazy"
                 />
-            </div>
+              </div>
         </div>
       </div>
       <div
         class="viewport-box"
         id="box-7"
-        data-viewport-target="box"
-        data-box-id="box-7"
-        data-content-type="photo"
+        data-controller="viewport-box"
+        data-viewport-box-box-id-value="box-7"
+        data-viewport-box-content-type-value="photo"
+        data-viewport-box-rotation-value="0"
+        data-action="
+          click->viewport-box#click
+          mouseenter->viewport-box#mouseEnter
+          mouseleave->viewport-box#mouseLeave
+        "
         style="position: absolute; left: 1137px; top: 695px; width: 384px; height: 307px; transform: rotate(0deg);"
       >
 
         <div class="box-content">
-            <div class="photo-placeholder">
+              <div
+                class="photo-placeholder"
+                data-controller="lazy-image"
+                data-lazy-image-src-value="/images/caxitlán-98.webp"
+              >
                 <img
-                  data-src="/images/caxitlán-98.webp"
                   src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2YwZjBmMCIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LXNpemU9IjE2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZmlsbD0iI2MwYzBjMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkxvYWRpbmcuLi48L3RleHQ+PC9zdmc+"
                   alt="Caxitlán"
                   class="w-full h-full object-cover"
-                  data-lazy="true"
                   loading="lazy"
                 />
-            </div>
+              </div>
         </div>
       </div>
       <div
         class="viewport-box"
         id="box-8"
-        data-viewport-target="box"
-        data-box-id="box-8"
-        data-content-type="photo"
+        data-controller="viewport-box"
+        data-viewport-box-box-id-value="box-8"
+        data-viewport-box-content-type-value="photo"
+        data-viewport-box-rotation-value="0"
+        data-action="
+          click->viewport-box#click
+          mouseenter->viewport-box#mouseEnter
+          mouseleave->viewport-box#mouseLeave
+        "
         style="position: absolute; left: 3003px; top: 712px; width: 512px; height: 410px; transform: rotate(0deg);"
       >
 
         <div class="box-content">
-            <div class="photo-placeholder">
+              <div
+                class="photo-placeholder"
+                data-controller="lazy-image"
+                data-lazy-image-src-value="/images/caxitlán-12.webp"
+              >
                 <img
-                  data-src="/images/caxitlán-12.webp"
                   src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2YwZjBmMCIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LXNpemU9IjE2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZmlsbD0iI2MwYzBjMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkxvYWRpbmcuLi48L3RleHQ+PC9zdmc+"
                   alt="Caxitlán"
                   class="w-full h-full object-cover"
-                  data-lazy="true"
                   loading="lazy"
                 />
-            </div>
+              </div>
         </div>
       </div>
       <div
         class="viewport-box"
         id="box-9"
-        data-viewport-target="box"
-        data-box-id="box-9"
-        data-content-type="photo"
+        data-controller="viewport-box"
+        data-viewport-box-box-id-value="box-9"
+        data-viewport-box-content-type-value="photo"
+        data-viewport-box-rotation-value="0"
+        data-action="
+          click->viewport-box#click
+          mouseenter->viewport-box#mouseEnter
+          mouseleave->viewport-box#mouseLeave
+        "
         style="position: absolute; left: 207px; top: 946px; width: 640px; height: 512px; transform: rotate(0deg);"
       >
 
         <div class="box-content">
-            <div class="photo-placeholder">
+              <div
+                class="photo-placeholder"
+                data-controller="lazy-image"
+                data-lazy-image-src-value="/images/caxitlán-18.webp"
+              >
                 <img
-                  data-src="/images/caxitlán-18.webp"
                   src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2YwZjBmMCIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LXNpemU9IjE2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZmlsbD0iI2MwYzBjMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkxvYWRpbmcuLi48L3RleHQ+PC9zdmc+"
                   alt="Caxitlán"
                   class="w-full h-full object-cover"
-                  data-lazy="true"
                   loading="lazy"
                 />
-            </div>
+              </div>
         </div>
       </div>
       <div
         class="viewport-box"
         id="box-10"
-        data-viewport-target="box"
-        data-box-id="box-10"
-        data-content-type="photo"
+        data-controller="viewport-box"
+        data-viewport-box-box-id-value="box-10"
+        data-viewport-box-content-type-value="photo"
+        data-viewport-box-rotation-value="0"
+        data-action="
+          click->viewport-box#click
+          mouseenter->viewport-box#mouseEnter
+          mouseleave->viewport-box#mouseLeave
+        "
         style="position: absolute; left: 3161px; top: 1579px; width: 768px; height: 615px; transform: rotate(0deg);"
       >
 
         <div class="box-content">
-            <div class="photo-placeholder">
+              <div
+                class="photo-placeholder"
+                data-controller="lazy-image"
+                data-lazy-image-src-value="/images/caxitlán-126.webp"
+              >
                 <img
-                  data-src="/images/caxitlán-126.webp"
                   src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2YwZjBmMCIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LXNpemU9IjE2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZmlsbD0iI2MwYzBjMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkxvYWRpbmcuLi48L3RleHQ+PC9zdmc+"
                   alt="Caxitlán"
                   class="w-full h-full object-cover"
-                  data-lazy="true"
                   loading="lazy"
                 />
-            </div>
+              </div>
         </div>
       </div>
+    <!-- Title positioned on canvas -->
+    <div class="absolute" style="left: 2700px; top: 1400px;">
+      <h1
+        class="
+          font-manrope text-8xl font-extrabold tracking-wider text-white uppercase m-0 p-0
+          whitespace-nowrap
+        "
+      >
+        CAXITLÁN
+      </h1>
+    </div>
   </div>
 </div>
 
@@ -412,7 +541,7 @@
     href="https://foto.mariochavez.io"
     class="
       text-gray-800 hover:text-gray-600 no-underline hover:underline
-      hover:underline-offset-4
+      hover:underline-offset-4 z-40
     "
     target="_blank"
   >Mario Alberto Chávez Cárdenas</a>
