@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="Caxitlán" />
 <meta property="og:image" content="https://caxitlan.org/images/caxitlan-cover.jpg" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2025-06-27T17:23:44-06:00" />
+<meta property="article:published_time" content="2025-06-29T22:11:42-06:00" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:image" content="https://caxitlan.org/images/caxitlan-cover.jpg" />
 <meta property="twitter:title" content="Caxitlán: Proyecto fotográfico que explora la identidad colimense contemporánea desde las raíces coloniales, recorriendo la ruta histórica de la conquista en Colima para revelar las complejidades del mestizaje y su influencia en la sociedad actual." />
@@ -52,8 +52,8 @@
     }
   </script>
 
-  <link rel="stylesheet" href="/_bridgetown/static/index.I3MKYYVC.css"/>
-  <script src="/_bridgetown/static/index.WXLPMHAZ.js" defer></script>
+  <link rel="stylesheet" href="/_bridgetown/static/index.4DPAFOWU.css"/>
+  <script src="/_bridgetown/static/index.ONVBRFVQ.js" defer></script>
   
 </head>
 
@@ -74,7 +74,10 @@
 </header>
 
 <div
-  class="viewport-container"
+  class="
+    relative w-full h-screen overflow-auto invisible scrollbar-hide
+    viewport-container data-[viewport-navigation-ready]:visible
+  "
   data-controller="viewport-navigation viewport-content-monitor"
   data-viewport-navigation-initial-box-value="box-2"
   data-viewport-content-monitor-target-box-value="box-2"
@@ -82,47 +85,73 @@
 >
 
   <div
-    class="viewport-overlay"
-    data-controller="overlay"
-    data-overlay-text-fill-delay-value="2000"
-    data-overlay-min-display-time-value="3000"
+  class="
+    fixed inset-0 bg-white z-50 flex items-center justify-center flex-col
+    opacity-100 transition-opacity duration-[2s] ease-in-out
+  "
+  data-controller="overlay"
+  data-overlay-text-fill-delay-value="2000"
+  data-overlay-min-display-time-value="3000"
+  data-overlay-auto-fade-out-delay-value="6000"
+>
+  <h1
+    class="
+      font-manrope text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold
+      tracking-[0.3rem] sm:tracking-[0.5rem] md:tracking-[0.7rem] lg:tracking-[0.9rem]
+      xl:tracking-[1.1rem] text-green-800 transition-colors duration-[2.5s]
+      ease-in-out wave-text data-[filled]:text-green-600
+    "
+    data-overlay-target="text"
   >
-    <h1 class="viewport-overlay-text" data-overlay-target="text">
-      CAXITLÁN
-    </h1>
+    CAXITLÁN
+  </h1>
+
     <div class="px-4 py-3">
-      <div class="flex items-center justify-center gap-3 max-w-screen-md mx-auto">
-        <svg
-          class="w-6 h-6 flex-shrink-0 text-gray-500"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <rect x="3" y="3" width="18" height="12" rx="2" ry="2"></rect>
-          <line x1="8" y1="21" x2="16" y2="21"></line>
-          <line x1="12" y1="15" x2="12" y2="21"></line>
-        </svg>
-        <p class="text-sm text-center leading-relaxed font-light text-gray-500 m-0">
-          Caxitlán está optimizado para tablets y computadoras.
-          <br/>Disfruta la experiencia completa en una pantalla más grande.
-        </p>
-      </div>
-    </div>
+  <div
+    class="
+      flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3
+      max-w-screen-md mx-auto
+    "
+  >
+    <svg
+      class="w-8 h-8 sm:w-6 sm:h-6 flex-shrink-0 text-gray-500"
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <rect x="3" y="3" width="18" height="12" rx="2" ry="2"></rect>
+      <line x1="8" y1="21" x2="16" y2="21"></line>
+      <line x1="12" y1="15" x2="12" y2="21"></line>
+    </svg>
+    <p
+      class="
+        text-xs sm:text-sm text-center leading-relaxed font-light text-gray-500 m-0
+      "
+    >
+      Caxitlán está optimizado para tablets y computadoras.
+      <br class="sm:hidden"/>
+      <span class="sm:block">Disfruta la experiencia completa en una pantalla más grande.</span>
+    </p>
   </div>
+</div>
+
+</div>
+
 
   <div
-    class="viewport-canvas"
+    class="relative viewport-canvas"
     data-viewport-navigation-target="canvas"
-    style="width: 4964px; height: 2690px;"
+    style="width: 4964px; height: 2690px; min-width: 4964px; min-height: 2690px;"
   >
 
-    <svg
+    <div class="absolute inset-0 z-0">
+      <svg
   class="viewport-background"
   width="4964"
   height="2690"
@@ -219,312 +248,611 @@
         opacity=".4"
       /></g></g></svg>
 
+    </div>
 
       <div
-        class="viewport-box"
-        id="box-1"
-        data-controller="viewport-box"
-        data-viewport-box-box-id-value="box-1"
-        data-viewport-box-content-type-value="photo"
-        data-viewport-box-rotation-value="0"
-        data-action="
-          click->viewport-box#click
-          mouseenter->viewport-box#mouseEnter
-          mouseleave->viewport-box#mouseLeave
-        "
-        style="position: absolute; left: 1833px; top: 138px; width: 896px; height: 717px; transform: rotate(0deg);"
-      >
-
-        <div class="box-content">
-              <div
-                class="photo-placeholder"
-                data-controller="lazy-image"
-                data-lazy-image-src-value="/images/caxitlán-39.webp"
-              >
-                <img
-                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2YwZjBmMCIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LXNpemU9IjE2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZmlsbD0iI2MwYzBjMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkxvYWRpbmcuLi48L3RleHQ+PC9zdmc+"
-                  alt="Caxitlán"
-                  class="w-full h-full object-cover"
-                  loading="lazy"
-                />
-              </div>
-        </div>
-      </div>
+  class="
+    absolute bg-gray-300 overflow-hidden rounded-lg z-10 transition-all duration-300
+    ease-out shadow-lg hover:scale-[1.02] hover:shadow-xl focus-visible:outline-2
+    focus-visible:outline-blue-500 focus-visible:outline-offset-2
+  "
+  id="box-1"
+  style="position: absolute; left: 1833px; top: 138px; width: 896px; height: 717px; transform: rotate(0deg); box-shadow: 5px 4px 15px rgba(0, 0, 0, 0.255);"
+  onmouseover="this.style.boxShadow='5px 4px 20px rgba(0, 0, 0, 0.35)'"
+  onmouseout="this.style.boxShadow='5px 4px 15px rgba(0, 0, 0, 0.255)'"
+>
+  <div class="w-full h-full">
+      <a href="/exploracion-uno" class="w-full h-full flex items-center justify-center bg-gray-100 rounded relative overflow-hidden">
+    <div
+      class="relative w-full h-full bg-gray-200"
+      data-controller="lazy-image"
+      data-lazy-image-src-value="/images/caxitlán-39.webp"
+    >
+      <!-- Lucide image icon placeholder -->
       <div
-        class="viewport-box"
-        id="box-2"
-        data-controller="viewport-box"
-        data-viewport-box-box-id-value="box-2"
-        data-viewport-box-content-type-value="photo"
-        data-viewport-box-rotation-value="0"
-        data-action="
-          click->viewport-box#click
-          mouseenter->viewport-box#mouseEnter
-          mouseleave->viewport-box#mouseLeave
+        class="
+          absolute inset-0 flex items-center justify-center transition-opacity
+          duration-500 data-[loading]:opacity-100 data-[loaded]:opacity-0
         "
-        style="position: absolute; left: 1974px; top: 1103px; width: 615px; height: 768px; transform: rotate(0deg);"
+        data-lazy-image-target="placeholder"
       >
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="48"
+  height="48"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.5"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="text-gray-400"
+>
+  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+  <circle cx="8.5" cy="8.5" r="1.5"/>
+  <polyline points="21 15 16 10 5 21"/>
+</svg>
 
-        <div class="box-content">
-              <div class="photo-placeholder">
-                <img
-                  src="/images/caxitlán-51.webp"
-                  alt="Caxitlán"
-                  class="w-full h-full object-cover"
-                />
-              </div>
-        </div>
       </div>
+      <!-- Actual image -->
+      <img
+        alt="Caxitlán"
+        class="
+          w-full h-full object-cover opacity-0 transition-opacity duration-[2s] ease-out
+          absolute inset-0 select-none no-drag
+        "
+        loading="lazy"
+        data-lazy-image-target="image"
+      />
+      <!-- Shimmer effect overlay -->
+      <div class="loading-shimmer absolute inset-0 pointer-events-none"></div>
+      <!-- Transparent overlay -->
+      <div class="absolute inset-0 z-10" data-lazy-image-target="overlay"></div>
+    </div>
+</a>
+  </div>
+</div>
+
       <div
-        class="viewport-box"
-        id="box-3"
-        data-controller="viewport-box"
-        data-viewport-box-box-id-value="box-3"
-        data-viewport-box-content-type-value="photo"
-        data-viewport-box-rotation-value="0"
-        data-action="
-          click->viewport-box#click
-          mouseenter->viewport-box#mouseEnter
-          mouseleave->viewport-box#mouseLeave
-        "
-        style="position: absolute; left: 1023px; top: 1556px; width: 615px; height: 768px; transform: rotate(0deg);"
-      >
+  class="
+    absolute bg-gray-300 overflow-hidden rounded-lg z-10 transition-all duration-300
+    ease-out shadow-lg hover:scale-[1.02] hover:shadow-xl focus-visible:outline-2
+    focus-visible:outline-blue-500 focus-visible:outline-offset-2
+  "
+  id="box-2"
+  style="position: absolute; left: 1974px; top: 1103px; width: 615px; height: 768px; transform: rotate(0deg); box-shadow: 5px 4px 15px rgba(0, 0, 0, 0.255);"
+  onmouseover="this.style.boxShadow='5px 4px 20px rgba(0, 0, 0, 0.35)'"
+  onmouseout="this.style.boxShadow='5px 4px 15px rgba(0, 0, 0, 0.255)'"
+>
+  <div class="w-full h-full">
+      <a href="/exploracion-dos" class="w-full h-full flex items-center justify-center bg-gray-100 rounded relative overflow-hidden">
+    <div class="relative w-full h-full">
+      <img
+        src="/images/caxitlán-51.webp"
+        alt="Caxitlán"
+        class="w-full h-full object-cover select-none no-drag"
+      />
+      <div class="absolute inset-0 z-10" oncontextmenu="return false;"></div>
+    </div>
+</a>
+  </div>
+</div>
 
-        <div class="box-content">
-              <div
-                class="photo-placeholder"
-                data-controller="lazy-image"
-                data-lazy-image-src-value="/images/caxitlán-49.webp"
-              >
-                <img
-                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2YwZjBmMCIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LXNpemU9IjE2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZmlsbD0iI2MwYzBjMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkxvYWRpbmcuLi48L3RleHQ+PC9zdmc+"
-                  alt="Frame 3"
-                  class="w-full h-full object-cover"
-                  loading="lazy"
-                />
-              </div>
-        </div>
-      </div>
       <div
-        class="viewport-box"
-        id="box-4"
-        data-controller="viewport-box"
-        data-viewport-box-box-id-value="box-4"
-        data-viewport-box-content-type-value="photo"
-        data-viewport-box-rotation-value="0"
-        data-action="
-          click->viewport-box#click
-          mouseenter->viewport-box#mouseEnter
-          mouseleave->viewport-box#mouseLeave
-        "
-        style="position: absolute; left: 4014px; top: 533px; width: 615px; height: 768px; transform: rotate(0deg);"
-      >
-
-        <div class="box-content">
-              <div
-                class="photo-placeholder"
-                data-controller="lazy-image"
-                data-lazy-image-src-value="/images/caxitlán-61.webp"
-              >
-                <img
-                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2YwZjBmMCIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LXNpemU9IjE2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZmlsbD0iI2MwYzBjMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkxvYWRpbmcuLi48L3RleHQ+PC9zdmc+"
-                  alt="Caxitlán"
-                  class="w-full h-full object-cover"
-                  loading="lazy"
-                />
-              </div>
-        </div>
-      </div>
+  class="
+    absolute bg-gray-300 overflow-hidden rounded-lg z-10 transition-all duration-300
+    ease-out shadow-lg hover:scale-[1.02] hover:shadow-xl focus-visible:outline-2
+    focus-visible:outline-blue-500 focus-visible:outline-offset-2
+  "
+  id="box-3"
+  style="position: absolute; left: 1023px; top: 1556px; width: 615px; height: 768px; transform: rotate(0deg); box-shadow: 5px 4px 15px rgba(0, 0, 0, 0.255);"
+  onmouseover="this.style.boxShadow='5px 4px 20px rgba(0, 0, 0, 0.35)'"
+  onmouseout="this.style.boxShadow='5px 4px 15px rgba(0, 0, 0, 0.255)'"
+>
+  <div class="w-full h-full">
+      <a href="/exploracion-nueve" class="w-full h-full flex items-center justify-center bg-gray-100 rounded relative overflow-hidden">
+    <div
+      class="relative w-full h-full bg-gray-200"
+      data-controller="lazy-image"
+      data-lazy-image-src-value="/images/caxitlán-49.webp"
+    >
+      <!-- Lucide image icon placeholder -->
       <div
-        class="viewport-box"
-        id="box-5"
-        data-controller="viewport-box"
-        data-viewport-box-box-id-value="box-5"
-        data-viewport-box-content-type-value="photo"
-        data-viewport-box-rotation-value="0"
-        data-action="
-          click->viewport-box#click
-          mouseenter->viewport-box#mouseEnter
-          mouseleave->viewport-box#mouseLeave
+        class="
+          absolute inset-0 flex items-center justify-center transition-opacity
+          duration-500 data-[loading]:opacity-100 data-[loaded]:opacity-0
         "
-        style="position: absolute; left: 2025px; top: 2119px; width: 512px; height: 410px; transform: rotate(0deg);"
+        data-lazy-image-target="placeholder"
       >
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="48"
+  height="48"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.5"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="text-gray-400"
+>
+  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+  <circle cx="8.5" cy="8.5" r="1.5"/>
+  <polyline points="21 15 16 10 5 21"/>
+</svg>
 
-        <div class="box-content">
-              <div
-                class="photo-placeholder"
-                data-controller="lazy-image"
-                data-lazy-image-src-value="/images/caxitlán-87.webp"
-              >
-                <img
-                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2YwZjBmMCIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LXNpemU9IjE2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZmlsbD0iI2MwYzBjMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkxvYWRpbmcuLi48L3RleHQ+PC9zdmc+"
-                  alt="Caxitlán"
-                  class="w-full h-full object-cover"
-                  loading="lazy"
-                />
-              </div>
-        </div>
       </div>
+      <!-- Actual image -->
+      <img
+        alt="Frame 3"
+        class="
+          w-full h-full object-cover opacity-0 transition-opacity duration-[2s] ease-out
+          absolute inset-0 select-none no-drag
+        "
+        loading="lazy"
+        data-lazy-image-target="image"
+      />
+      <!-- Shimmer effect overlay -->
+      <div class="loading-shimmer absolute inset-0 pointer-events-none"></div>
+      <!-- Transparent overlay -->
+      <div class="absolute inset-0 z-10" data-lazy-image-target="overlay"></div>
+    </div>
+</a>
+  </div>
+</div>
+
       <div
-        class="viewport-box"
-        id="box-6"
-        data-controller="viewport-box"
-        data-viewport-box-box-id-value="box-6"
-        data-viewport-box-content-type-value="photo"
-        data-viewport-box-rotation-value="0"
-        data-action="
-          click->viewport-box#click
-          mouseenter->viewport-box#mouseEnter
-          mouseleave->viewport-box#mouseLeave
-        "
-        style="position: absolute; left: 4389px; top: 2001px; width: 384px; height: 307px; transform: rotate(0deg);"
-      >
-
-        <div class="box-content">
-              <div
-                class="photo-placeholder"
-                data-controller="lazy-image"
-                data-lazy-image-src-value="/images/caxitlán-9.webp"
-              >
-                <img
-                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2YwZjBmMCIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LXNpemU9IjE2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZmlsbD0iI2MwYzBjMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkxvYWRpbmcuLi48L3RleHQ+PC9zdmc+"
-                  alt="Caxitlán"
-                  class="w-full h-full object-cover"
-                  loading="lazy"
-                />
-              </div>
-        </div>
-      </div>
+  class="
+    absolute bg-gray-300 overflow-hidden rounded-lg z-10 transition-all duration-300
+    ease-out shadow-lg hover:scale-[1.02] hover:shadow-xl focus-visible:outline-2
+    focus-visible:outline-blue-500 focus-visible:outline-offset-2
+  "
+  id="box-4"
+  style="position: absolute; left: 4014px; top: 533px; width: 615px; height: 768px; transform: rotate(0deg); box-shadow: 5px 4px 15px rgba(0, 0, 0, 0.255);"
+  onmouseover="this.style.boxShadow='5px 4px 20px rgba(0, 0, 0, 0.35)'"
+  onmouseout="this.style.boxShadow='5px 4px 15px rgba(0, 0, 0, 0.255)'"
+>
+  <div class="w-full h-full">
+      <a href="/exploracion-tres" class="w-full h-full flex items-center justify-center bg-gray-100 rounded relative overflow-hidden">
+    <div
+      class="relative w-full h-full bg-gray-200"
+      data-controller="lazy-image"
+      data-lazy-image-src-value="/images/caxitlán-61.webp"
+    >
+      <!-- Lucide image icon placeholder -->
       <div
-        class="viewport-box"
-        id="box-7"
-        data-controller="viewport-box"
-        data-viewport-box-box-id-value="box-7"
-        data-viewport-box-content-type-value="photo"
-        data-viewport-box-rotation-value="0"
-        data-action="
-          click->viewport-box#click
-          mouseenter->viewport-box#mouseEnter
-          mouseleave->viewport-box#mouseLeave
+        class="
+          absolute inset-0 flex items-center justify-center transition-opacity
+          duration-500 data-[loading]:opacity-100 data-[loaded]:opacity-0
         "
-        style="position: absolute; left: 1137px; top: 695px; width: 384px; height: 307px; transform: rotate(0deg);"
+        data-lazy-image-target="placeholder"
       >
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="48"
+  height="48"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.5"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="text-gray-400"
+>
+  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+  <circle cx="8.5" cy="8.5" r="1.5"/>
+  <polyline points="21 15 16 10 5 21"/>
+</svg>
 
-        <div class="box-content">
-              <div
-                class="photo-placeholder"
-                data-controller="lazy-image"
-                data-lazy-image-src-value="/images/caxitlán-98.webp"
-              >
-                <img
-                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2YwZjBmMCIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LXNpemU9IjE2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZmlsbD0iI2MwYzBjMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkxvYWRpbmcuLi48L3RleHQ+PC9zdmc+"
-                  alt="Caxitlán"
-                  class="w-full h-full object-cover"
-                  loading="lazy"
-                />
-              </div>
-        </div>
       </div>
+      <!-- Actual image -->
+      <img
+        alt="Caxitlán"
+        class="
+          w-full h-full object-cover opacity-0 transition-opacity duration-[2s] ease-out
+          absolute inset-0 select-none no-drag
+        "
+        loading="lazy"
+        data-lazy-image-target="image"
+      />
+      <!-- Shimmer effect overlay -->
+      <div class="loading-shimmer absolute inset-0 pointer-events-none"></div>
+      <!-- Transparent overlay -->
+      <div class="absolute inset-0 z-10" data-lazy-image-target="overlay"></div>
+    </div>
+</a>
+  </div>
+</div>
+
       <div
-        class="viewport-box"
-        id="box-8"
-        data-controller="viewport-box"
-        data-viewport-box-box-id-value="box-8"
-        data-viewport-box-content-type-value="photo"
-        data-viewport-box-rotation-value="0"
-        data-action="
-          click->viewport-box#click
-          mouseenter->viewport-box#mouseEnter
-          mouseleave->viewport-box#mouseLeave
-        "
-        style="position: absolute; left: 3003px; top: 712px; width: 512px; height: 410px; transform: rotate(0deg);"
-      >
-
-        <div class="box-content">
-              <div
-                class="photo-placeholder"
-                data-controller="lazy-image"
-                data-lazy-image-src-value="/images/caxitlán-12.webp"
-              >
-                <img
-                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2YwZjBmMCIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LXNpemU9IjE2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZmlsbD0iI2MwYzBjMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkxvYWRpbmcuLi48L3RleHQ+PC9zdmc+"
-                  alt="Caxitlán"
-                  class="w-full h-full object-cover"
-                  loading="lazy"
-                />
-              </div>
-        </div>
-      </div>
+  class="
+    absolute bg-gray-300 overflow-hidden rounded-lg z-10 transition-all duration-300
+    ease-out shadow-lg hover:scale-[1.02] hover:shadow-xl focus-visible:outline-2
+    focus-visible:outline-blue-500 focus-visible:outline-offset-2
+  "
+  id="box-5"
+  style="position: absolute; left: 2025px; top: 2119px; width: 512px; height: 410px; transform: rotate(0deg); box-shadow: 5px 4px 15px rgba(0, 0, 0, 0.255);"
+  onmouseover="this.style.boxShadow='5px 4px 20px rgba(0, 0, 0, 0.35)'"
+  onmouseout="this.style.boxShadow='5px 4px 15px rgba(0, 0, 0, 0.255)'"
+>
+  <div class="w-full h-full">
+      <a href="/exploracion-siete" class="w-full h-full flex items-center justify-center bg-gray-100 rounded relative overflow-hidden">
+    <div
+      class="relative w-full h-full bg-gray-200"
+      data-controller="lazy-image"
+      data-lazy-image-src-value="/images/caxitlán-87.webp"
+    >
+      <!-- Lucide image icon placeholder -->
       <div
-        class="viewport-box"
-        id="box-9"
-        data-controller="viewport-box"
-        data-viewport-box-box-id-value="box-9"
-        data-viewport-box-content-type-value="photo"
-        data-viewport-box-rotation-value="0"
-        data-action="
-          click->viewport-box#click
-          mouseenter->viewport-box#mouseEnter
-          mouseleave->viewport-box#mouseLeave
+        class="
+          absolute inset-0 flex items-center justify-center transition-opacity
+          duration-500 data-[loading]:opacity-100 data-[loaded]:opacity-0
         "
-        style="position: absolute; left: 207px; top: 946px; width: 640px; height: 512px; transform: rotate(0deg);"
+        data-lazy-image-target="placeholder"
       >
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="48"
+  height="48"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.5"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="text-gray-400"
+>
+  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+  <circle cx="8.5" cy="8.5" r="1.5"/>
+  <polyline points="21 15 16 10 5 21"/>
+</svg>
 
-        <div class="box-content">
-              <div
-                class="photo-placeholder"
-                data-controller="lazy-image"
-                data-lazy-image-src-value="/images/caxitlán-18.webp"
-              >
-                <img
-                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2YwZjBmMCIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LXNpemU9IjE2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZmlsbD0iI2MwYzBjMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkxvYWRpbmcuLi48L3RleHQ+PC9zdmc+"
-                  alt="Caxitlán"
-                  class="w-full h-full object-cover"
-                  loading="lazy"
-                />
-              </div>
-        </div>
       </div>
+      <!-- Actual image -->
+      <img
+        alt="Caxitlán"
+        class="
+          w-full h-full object-cover opacity-0 transition-opacity duration-[2s] ease-out
+          absolute inset-0 select-none no-drag
+        "
+        loading="lazy"
+        data-lazy-image-target="image"
+      />
+      <!-- Shimmer effect overlay -->
+      <div class="loading-shimmer absolute inset-0 pointer-events-none"></div>
+      <!-- Transparent overlay -->
+      <div class="absolute inset-0 z-10" data-lazy-image-target="overlay"></div>
+    </div>
+</a>
+  </div>
+</div>
+
       <div
-        class="viewport-box"
-        id="box-10"
-        data-controller="viewport-box"
-        data-viewport-box-box-id-value="box-10"
-        data-viewport-box-content-type-value="photo"
-        data-viewport-box-rotation-value="0"
-        data-action="
-          click->viewport-box#click
-          mouseenter->viewport-box#mouseEnter
-          mouseleave->viewport-box#mouseLeave
+  class="
+    absolute bg-gray-300 overflow-hidden rounded-lg z-10 transition-all duration-300
+    ease-out shadow-lg hover:scale-[1.02] hover:shadow-xl focus-visible:outline-2
+    focus-visible:outline-blue-500 focus-visible:outline-offset-2
+  "
+  id="box-6"
+  style="position: absolute; left: 4389px; top: 2001px; width: 384px; height: 307px; transform: rotate(0deg); box-shadow: 5px 4px 15px rgba(0, 0, 0, 0.255);"
+  onmouseover="this.style.boxShadow='5px 4px 20px rgba(0, 0, 0, 0.35)'"
+  onmouseout="this.style.boxShadow='5px 4px 15px rgba(0, 0, 0, 0.255)'"
+>
+  <div class="w-full h-full">
+      <a href="/exploracion-cinco" class="w-full h-full flex items-center justify-center bg-gray-100 rounded relative overflow-hidden">
+    <div
+      class="relative w-full h-full bg-gray-200"
+      data-controller="lazy-image"
+      data-lazy-image-src-value="/images/caxitlán-9.webp"
+    >
+      <!-- Lucide image icon placeholder -->
+      <div
+        class="
+          absolute inset-0 flex items-center justify-center transition-opacity
+          duration-500 data-[loading]:opacity-100 data-[loaded]:opacity-0
         "
-        style="position: absolute; left: 3161px; top: 1579px; width: 768px; height: 615px; transform: rotate(0deg);"
+        data-lazy-image-target="placeholder"
       >
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="48"
+  height="48"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.5"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="text-gray-400"
+>
+  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+  <circle cx="8.5" cy="8.5" r="1.5"/>
+  <polyline points="21 15 16 10 5 21"/>
+</svg>
 
-        <div class="box-content">
-              <div
-                class="photo-placeholder"
-                data-controller="lazy-image"
-                data-lazy-image-src-value="/images/caxitlán-126.webp"
-              >
-                <img
-                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2YwZjBmMCIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LXNpemU9IjE2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZmlsbD0iI2MwYzBjMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkxvYWRpbmcuLi48L3RleHQ+PC9zdmc+"
-                  alt="Caxitlán"
-                  class="w-full h-full object-cover"
-                  loading="lazy"
-                />
-              </div>
-        </div>
       </div>
-    <!-- Title positioned on canvas -->
+      <!-- Actual image -->
+      <img
+        alt="Caxitlán"
+        class="
+          w-full h-full object-cover opacity-0 transition-opacity duration-[2s] ease-out
+          absolute inset-0 select-none no-drag
+        "
+        loading="lazy"
+        data-lazy-image-target="image"
+      />
+      <!-- Shimmer effect overlay -->
+      <div class="loading-shimmer absolute inset-0 pointer-events-none"></div>
+      <!-- Transparent overlay -->
+      <div class="absolute inset-0 z-10" data-lazy-image-target="overlay"></div>
+    </div>
+</a>
+  </div>
+</div>
+
+      <div
+  class="
+    absolute bg-gray-300 overflow-hidden rounded-lg z-10 transition-all duration-300
+    ease-out shadow-lg hover:scale-[1.02] hover:shadow-xl focus-visible:outline-2
+    focus-visible:outline-blue-500 focus-visible:outline-offset-2
+  "
+  id="box-7"
+  style="position: absolute; left: 1137px; top: 695px; width: 384px; height: 307px; transform: rotate(0deg); box-shadow: 5px 4px 15px rgba(0, 0, 0, 0.255);"
+  onmouseover="this.style.boxShadow='5px 4px 20px rgba(0, 0, 0, 0.35)'"
+  onmouseout="this.style.boxShadow='5px 4px 15px rgba(0, 0, 0, 0.255)'"
+>
+  <div class="w-full h-full">
+      <a href="/exploracion-seis" class="w-full h-full flex items-center justify-center bg-gray-100 rounded relative overflow-hidden">
+    <div
+      class="relative w-full h-full bg-gray-200"
+      data-controller="lazy-image"
+      data-lazy-image-src-value="/images/caxitlán-98.webp"
+    >
+      <!-- Lucide image icon placeholder -->
+      <div
+        class="
+          absolute inset-0 flex items-center justify-center transition-opacity
+          duration-500 data-[loading]:opacity-100 data-[loaded]:opacity-0
+        "
+        data-lazy-image-target="placeholder"
+      >
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="48"
+  height="48"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.5"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="text-gray-400"
+>
+  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+  <circle cx="8.5" cy="8.5" r="1.5"/>
+  <polyline points="21 15 16 10 5 21"/>
+</svg>
+
+      </div>
+      <!-- Actual image -->
+      <img
+        alt="Caxitlán"
+        class="
+          w-full h-full object-cover opacity-0 transition-opacity duration-[2s] ease-out
+          absolute inset-0 select-none no-drag
+        "
+        loading="lazy"
+        data-lazy-image-target="image"
+      />
+      <!-- Shimmer effect overlay -->
+      <div class="loading-shimmer absolute inset-0 pointer-events-none"></div>
+      <!-- Transparent overlay -->
+      <div class="absolute inset-0 z-10" data-lazy-image-target="overlay"></div>
+    </div>
+</a>
+  </div>
+</div>
+
+      <div
+  class="
+    absolute bg-gray-300 overflow-hidden rounded-lg z-10 transition-all duration-300
+    ease-out shadow-lg hover:scale-[1.02] hover:shadow-xl focus-visible:outline-2
+    focus-visible:outline-blue-500 focus-visible:outline-offset-2
+  "
+  id="box-8"
+  style="position: absolute; left: 3003px; top: 712px; width: 512px; height: 410px; transform: rotate(0deg); box-shadow: 5px 4px 15px rgba(0, 0, 0, 0.255);"
+  onmouseover="this.style.boxShadow='5px 4px 20px rgba(0, 0, 0, 0.35)'"
+  onmouseout="this.style.boxShadow='5px 4px 15px rgba(0, 0, 0, 0.255)'"
+>
+  <div class="w-full h-full">
+      <a href="/exploracion-ocho" class="w-full h-full flex items-center justify-center bg-gray-100 rounded relative overflow-hidden">
+    <div
+      class="relative w-full h-full bg-gray-200"
+      data-controller="lazy-image"
+      data-lazy-image-src-value="/images/caxitlán-12.webp"
+    >
+      <!-- Lucide image icon placeholder -->
+      <div
+        class="
+          absolute inset-0 flex items-center justify-center transition-opacity
+          duration-500 data-[loading]:opacity-100 data-[loaded]:opacity-0
+        "
+        data-lazy-image-target="placeholder"
+      >
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="48"
+  height="48"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.5"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="text-gray-400"
+>
+  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+  <circle cx="8.5" cy="8.5" r="1.5"/>
+  <polyline points="21 15 16 10 5 21"/>
+</svg>
+
+      </div>
+      <!-- Actual image -->
+      <img
+        alt="Caxitlán"
+        class="
+          w-full h-full object-cover opacity-0 transition-opacity duration-[2s] ease-out
+          absolute inset-0 select-none no-drag
+        "
+        loading="lazy"
+        data-lazy-image-target="image"
+      />
+      <!-- Shimmer effect overlay -->
+      <div class="loading-shimmer absolute inset-0 pointer-events-none"></div>
+      <!-- Transparent overlay -->
+      <div class="absolute inset-0 z-10" data-lazy-image-target="overlay"></div>
+    </div>
+</a>
+  </div>
+</div>
+
+      <div
+  class="
+    absolute bg-gray-300 overflow-hidden rounded-lg z-10 transition-all duration-300
+    ease-out shadow-lg hover:scale-[1.02] hover:shadow-xl focus-visible:outline-2
+    focus-visible:outline-blue-500 focus-visible:outline-offset-2
+  "
+  id="box-9"
+  style="position: absolute; left: 207px; top: 946px; width: 640px; height: 512px; transform: rotate(0deg); box-shadow: 5px 4px 15px rgba(0, 0, 0, 0.255);"
+  onmouseover="this.style.boxShadow='5px 4px 20px rgba(0, 0, 0, 0.35)'"
+  onmouseout="this.style.boxShadow='5px 4px 15px rgba(0, 0, 0, 0.255)'"
+>
+  <div class="w-full h-full">
+      <a href="/exploracion-diez" class="w-full h-full flex items-center justify-center bg-gray-100 rounded relative overflow-hidden">
+    <div
+      class="relative w-full h-full bg-gray-200"
+      data-controller="lazy-image"
+      data-lazy-image-src-value="/images/caxitlán-18.webp"
+    >
+      <!-- Lucide image icon placeholder -->
+      <div
+        class="
+          absolute inset-0 flex items-center justify-center transition-opacity
+          duration-500 data-[loading]:opacity-100 data-[loaded]:opacity-0
+        "
+        data-lazy-image-target="placeholder"
+      >
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="48"
+  height="48"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.5"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="text-gray-400"
+>
+  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+  <circle cx="8.5" cy="8.5" r="1.5"/>
+  <polyline points="21 15 16 10 5 21"/>
+</svg>
+
+      </div>
+      <!-- Actual image -->
+      <img
+        alt="Caxitlán"
+        class="
+          w-full h-full object-cover opacity-0 transition-opacity duration-[2s] ease-out
+          absolute inset-0 select-none no-drag
+        "
+        loading="lazy"
+        data-lazy-image-target="image"
+      />
+      <!-- Shimmer effect overlay -->
+      <div class="loading-shimmer absolute inset-0 pointer-events-none"></div>
+      <!-- Transparent overlay -->
+      <div class="absolute inset-0 z-10" data-lazy-image-target="overlay"></div>
+    </div>
+</a>
+  </div>
+</div>
+
+      <div
+  class="
+    absolute bg-gray-300 overflow-hidden rounded-lg z-10 transition-all duration-300
+    ease-out shadow-lg hover:scale-[1.02] hover:shadow-xl focus-visible:outline-2
+    focus-visible:outline-blue-500 focus-visible:outline-offset-2
+  "
+  id="box-10"
+  style="position: absolute; left: 3161px; top: 1579px; width: 768px; height: 615px; transform: rotate(0deg); box-shadow: 5px 4px 15px rgba(0, 0, 0, 0.255);"
+  onmouseover="this.style.boxShadow='5px 4px 20px rgba(0, 0, 0, 0.35)'"
+  onmouseout="this.style.boxShadow='5px 4px 15px rgba(0, 0, 0, 0.255)'"
+>
+  <div class="w-full h-full">
+      <a href="/exploracion-cuatro" class="w-full h-full flex items-center justify-center bg-gray-100 rounded relative overflow-hidden">
+    <div
+      class="relative w-full h-full bg-gray-200"
+      data-controller="lazy-image"
+      data-lazy-image-src-value="/images/caxitlán-126.webp"
+    >
+      <!-- Lucide image icon placeholder -->
+      <div
+        class="
+          absolute inset-0 flex items-center justify-center transition-opacity
+          duration-500 data-[loading]:opacity-100 data-[loaded]:opacity-0
+        "
+        data-lazy-image-target="placeholder"
+      >
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="48"
+  height="48"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.5"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="text-gray-400"
+>
+  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+  <circle cx="8.5" cy="8.5" r="1.5"/>
+  <polyline points="21 15 16 10 5 21"/>
+</svg>
+
+      </div>
+      <!-- Actual image -->
+      <img
+        alt="Caxitlán"
+        class="
+          w-full h-full object-cover opacity-0 transition-opacity duration-[2s] ease-out
+          absolute inset-0 select-none no-drag
+        "
+        loading="lazy"
+        data-lazy-image-target="image"
+      />
+      <!-- Shimmer effect overlay -->
+      <div class="loading-shimmer absolute inset-0 pointer-events-none"></div>
+      <!-- Transparent overlay -->
+      <div class="absolute inset-0 z-10" data-lazy-image-target="overlay"></div>
+    </div>
+</a>
+  </div>
+</div>
+
+
     <div class="absolute" style="left: 2700px; top: 1400px;">
       <h1
-        class="
-          font-manrope text-8xl font-extrabold tracking-wider text-white uppercase m-0 p-0
-          whitespace-nowrap
-        "
-      >
-        CAXITLÁN
-      </h1>
+  class="
+    font-manrope font-bold text-white uppercase
+    text-6xl md:text-7xl lg:text-8xl tracking-[0.7rem] md:tracking-[0.9rem] lg:tracking-[1.1rem] 
+  "
+>
+  CAXITLÁN
+</h1>
+
     </div>
   </div>
 </div>
@@ -532,7 +860,8 @@
 
 <footer
   class="
-    fixed bottom-4 right-4 z-50 bg-white bg-opacity-80 p-2 rounded shadow text-xs
+    fixed bottom-2 right-2 sm:bottom-4 sm:right-4 z-50 bg-white bg-opacity-80 p-1.5
+    sm:p-2 rounded shadow text-[10px] sm:text-xs
   "
 >
   ©
@@ -544,8 +873,11 @@
       hover:underline-offset-4 z-40
     "
     target="_blank"
-  >Mario Alberto Chávez Cárdenas</a>
+  >
+    Mario Alberto Chávez Cárdenas
+  </a>
 </footer>
+
 
     </main>
   </body>
