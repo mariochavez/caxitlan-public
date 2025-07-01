@@ -27,7 +27,7 @@ class Builders::ExplorationPages < Bridgetown::Builder
         # Use _content_ for the actual content
         _content_ <<~ERB
           <% site.data.exploraciones.#{name}.items.each do |item| %>
-            <%= render ExplorationItem.new(item: item) %>
+            <%= render ExplorationItem.new(item: item) if item.content_type == "photo" %>
           <% end %>
         ERB
       end
